@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,500&display=swap");
+}
+/* UNIVERSAL */
+html{
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+.logo-container{
+    overflow: hidden;
+}
+
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+}
+
+header .content{
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+header .logo-container{
+    flex: 1;
+}
+
+header .logo-container img{
+    display: block;
+    max-width: 15%;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding-left: 3.5rem;
+}
+
+nav a {
+    font-size: 1.15rem;
+    color: black;
+}
+
+
+/* BODY */
+body{
+    position: relative;
+}

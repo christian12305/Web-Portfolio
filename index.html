@@ -3,37 +3,34 @@
 <meta charset="UTF-8">
   <head>
     <title>My Web Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./Assets/index.css">
   </head>
 
   <!-- HEADER -->
   <header>
     <!-- NAV BAR ON TOP -->
-    <nav class="nav-bar-top">
-        <img class="logo" src="./Assets/Christian J. Ram s (1).png">
-        <ul>
-            <li id="projects">Projects / Activities</li>
-            <li id="skills">Skills</li>
-            <li id="contact">Contact</li>
-        </ul>
-    </nav>
-    <!-- NAV BAR ON SCROLL DOWN -->
-    <nav class="nav-bar">
-        <img class="logo" src="./Assets/Christian J. Ram s (1).png">
-        <ul>
-            <li id="about">About</li>
-            <li id="projects">Projects / Activities</li>
-            <li id="skills">Skills</li>
-            <li id="contact">Contact</li>
-        </ul>
-    </nav>
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" 
-    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCdLkaR6P2icrniiJKXJvcc%2FMy-wireframe-of-web-portfolio%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DNunQamMPYWouxL1o-1" allowfullscreen></iframe>
+    <div class="content">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="./Assets/logo.png">
+            </a>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li id="about"><a href="#">About</a></li>
+                <li id="projects"><a href="#">Projects / Activities</a></li>
+                <li id="skills"><a href="#">Skills</a></li>
+                <li id="contact"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
   </header>
 
   <!-- MAIN BODY -->
   <body>
-
+    <!-- FIGMA -->
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" 
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCdLkaR6P2icrniiJKXJvcc%2FMy-wireframe-of-web-portfolio%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DNunQamMPYWouxL1o-1" allowfullscreen></iframe>
     <!-- ABOUT ME SECTION -->
     <div class="about-me">
         <p>
@@ -41,8 +38,8 @@
             enjoying the latest technology. Now I am a software developer, 
             invested in developing the latest technology.
         </p>
-        <div>
-            <img class="profile" src="./Assets/CHRO.JPG">
+        <div class="profile-container">
+            <img src="./Assets/CHRO.JPG">
         </div>
     </div>
 
@@ -158,7 +155,9 @@
     </div>
   </body>
   <footer>
-    <p>Made by Christian J. Ramos Ortega</p>
-    <p>2023</p>
+    <div class="content">
+        <p class="copyright">Made by Christian J. Ramos Ortega</p>
+        <p class="copyright">2023</p>
+    </div>
   </footer>
   </html>
