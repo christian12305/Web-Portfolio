@@ -12,15 +12,17 @@ html{
     overflow: hidden;
 }
 
-
 /* HEADER */
 header {
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 100;
     width: 100%;
-    border-bottom: solid 1px #c6c1c1;
-    background-color: white;
+    background-color: hsl(221, 72%, 69%);
+    /* EL SOL */
+    /* Starting position at the east (right) */
+    background-image: radial-gradient(circle at right, hsl(52, 100%, 42%), hsl(52, 100%, 69%) -3%, hsl(52, 95%, 54%) -5%,hsl(221, 71%, 75%) 50%)
 }
 
 header .content{
@@ -35,12 +37,13 @@ header .logo-container{
 
 header .logo-container img{
     display: block;
-    max-width: 15%;
+    max-width: 20%;
 }
 
 header nav ul {
     display: flex;
     list-style-type: none;
+    padding-right: 5rem;
 }
 
 nav li {
@@ -56,4 +59,10 @@ nav a {
 /* BODY */
 body{
     position: relative;
+    top: 10rem;
+}
+
+/* FOOTER */
+footer{
+    background-color: #E9967A;
 }
