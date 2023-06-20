@@ -19,10 +19,15 @@ header {
     left: 0;
     z-index: 100;
     width: 100%;
-    background-color: hsl(221, 72%, 69%);
+    background-color: hsl(221, 81%, 77%);
     /* EL SOL */
     /* Starting position at the east (right) */
-    background-image: radial-gradient(circle at right, hsl(52, 100%, 42%), hsl(52, 100%, 69%) -3%, hsl(52, 95%, 54%) -5%,hsl(221, 71%, 75%) 50%)
+    background-image: radial-gradient(
+        circle at right, 
+        hsl(52, 100%, 42%),
+        hsl(52, 95%, 54%) -3%,
+        hsl(52, 100%, 69%) -5%, 
+        hsl(221, 81%, 77%) 50%)
 }
 
 header .content{
@@ -53,6 +58,11 @@ nav li {
 nav a {
     font-size: 1.15rem;
     color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:
 }
 
 
@@ -65,4 +75,15 @@ body{
 /* FOOTER */
 footer{
     background-color: #E9967A;
+    padding: 0.25rem;
+}
+
+footer .content{
+    font-size: 0.75rem;
+    display: flex;
+    align-items: left;
+}
+
+.copyright{
+    padding-left: 0.5rem;
 }
