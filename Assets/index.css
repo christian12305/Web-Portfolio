@@ -73,8 +73,26 @@ body{
     background: linear-gradient(
         rgba(149,179,244,1) 75%, 
         rgb(0, 60, 188) 90%,
-        rgb(9, 57, 159) 100%
+        rgb(9, 57, 159) 150%
     )
+}
+
+.center{
+    text-align: center;
+}
+
+.skills{
+    list-style-type: none;
+}
+
+.about-me{
+    display: inline-flex;
+    padding: 5%;
+}
+
+.profile-container img{
+    max-width: 20%;
+    border-radius: 50%;
 }
 
 /* FOOTER */
