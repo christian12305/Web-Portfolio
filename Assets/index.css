@@ -24,10 +24,8 @@ header {
     /* Starting position at the east (right) */
     background-image: radial-gradient(
         circle at right, 
-        hsl(52, 100%, 42%),
-        hsl(52, 95%, 54%) -3%,
-        hsl(52, 100%, 69%) -5%, 
-        hsl(221, 81%, 77%) 50%)
+        hsl(52, 100%, 67%) -10%, 
+        rgba(149,179,244,1) 65%);
 }
 
 header .content{
@@ -85,15 +83,27 @@ body{
     list-style-type: none;
 }
 
+/* ABOUT ME */
 .about-me{
-    display: inline-flex;
+    display: flex;
     padding: 5%;
+    padding-left: 15%;
+    margin-top: 5%;
+}
+
+.text{
+    text-indent: 5%;
 }
 
 .profile-container img{
+    margin-top: 5%;
+    margin-left: 5%;
     max-width: 20%;
     border-radius: 50%;
 }
+
+/* PROJECTS / ACTIVITIES */
+
 
 /* FOOTER */
 footer{
