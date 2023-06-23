@@ -16,6 +16,26 @@ html{
     text-align: center;
 }
 
+h1{
+    font-size: 1.75rem;
+}
+
+h2{
+    font-size: 1.65;
+}
+
+h3{
+    font-size: 1.50rem;
+}
+
+h4{
+    font-size: 1.30rem;
+}
+
+h5{
+    font-size: 1.25rem;
+}
+
 p{
     font-size: 1rem;
 }
@@ -27,7 +47,6 @@ header {
     left: 0;
     z-index: 100;
     width: 100%;
-    background-color: hsl(221, 81%, 77%);
     /* EL SOL */
     /* Starting position at the east (right) */
     background-image: radial-gradient(
@@ -75,11 +94,10 @@ nav a:hover{
 /* BODY */
 body{
     position: relative;
-    top: 10rem;
+    margin-top: 10rem;
     background: linear-gradient(
         rgba(149,179,244,1) 75%, 
-        rgb(0, 60, 188) 90%,
-        rgb(9, 57, 159) 250%
+        rgb(0, 60, 188) 100%
     )
 }
 
@@ -89,10 +107,16 @@ body{
     padding: 5%;
     padding-left: 15%;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .text{
     text-indent: 5%;
+}
+
+.text h2{
+    text-indent: -2%;
+    margin-bottom: 1%;
 }
 
 .profile-container img{
@@ -146,8 +170,7 @@ body{
 #aecc{
     display: inline-flex;
     width:100%;
-    justify-content: space-around;
-    padding: 2%;
+    justify-content: space-evenly;
 }
 
 #aecc img{
@@ -162,13 +185,17 @@ body{
     width: 30%;
 }
 
+#awards-recognitions{
+    margin-top: 3%;
+}
+
 #awards{
-    display: inline-flex;
-    padding: 2%;
+    display: inline-block;
+    width: 100%;
 }
 
 #awards div{
-    margin: 2%;
+    margin: 8%;
 }
 
 /* SKILLS */
@@ -176,29 +203,30 @@ body{
     list-style-type: none;
 }
 
+#section{
+    margin-top: 3%;
+}
+
 #skill-section{
-    outline: solid red;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-bottom: 12px;
 }
-
-#skill-section div{
-    outline: solid red;
-}
-
 
 /* FOOTER */
 footer{
-    background-color: #E9967A;
-    padding: 0.25rem;
+    position: relative;
+    padding: 8px;
+    margin: -8px;
+    background: #E9967A;
 }
 
 footer .content{
     font-size: 0.75rem;
     display: flex;
-    align-items: left;
+    justify-content: end;
 }
 
 .copyright{
-    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
