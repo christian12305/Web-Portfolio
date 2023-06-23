@@ -12,6 +12,14 @@ html{
     overflow: hidden;
 }
 
+.center{
+    text-align: center;
+}
+
+p{
+    font-size: 1rem;
+}
+
 /* HEADER */
 header {
     position: fixed;
@@ -71,16 +79,8 @@ body{
     background: linear-gradient(
         rgba(149,179,244,1) 75%, 
         rgb(0, 60, 188) 90%,
-        rgb(9, 57, 159) 150%
+        rgb(9, 57, 159) 250%
     )
-}
-
-.center{
-    text-align: center;
-}
-
-.skills{
-    list-style-type: none;
 }
 
 /* ABOUT ME */
@@ -103,6 +103,88 @@ body{
 }
 
 /* PROJECTS / ACTIVITIES */
+.projects-activities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.projects-activities h3{
+    min-width: 100%;
+}
+
+.projects-activities div{
+    min-width: 35%;
+    margin: 2%;
+}
+
+.tech-stack{
+    text-align: left;
+    position:relative;
+    left: 2%;
+    top: -10%;
+    width: 75%;
+}
+
+.title{
+    position: relative;
+    top: -10%;
+    font-size: 1.25rem;
+}
+
+.description{
+    float: right;
+}
+
+.abstract{
+    justify-content: center;
+
+}
+
+/* AWARDS / RECOGNITIONS & AECC */
+#aecc{
+    display: inline-flex;
+    width:100%;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+#aecc img{
+    max-width: 10%;
+}
+
+#public-relations{
+    width: 30%;
+}
+
+#ctf-aecc{
+    width: 30%;
+}
+
+#awards{
+    display: inline-flex;
+    padding: 2%;
+}
+
+#awards div{
+    margin: 2%;
+}
+
+/* SKILLS */
+.skills{
+    list-style-type: none;
+}
+
+#skill-section{
+    outline: solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#skill-section div{
+    outline: solid red;
+}
 
 
 /* FOOTER */
