@@ -17,9 +17,9 @@
         <!-- NAV BAR -->
         <nav class="nav-bar">
             <ul>
-                <li id="about"><a href="#">About</a></li>
-                <li id="projects"><a href="#">Projects / Activities</a></li>
-                <li id="skills"><a href="#">Skills</a></li>
+                <li id="about"><a href="#about-me">About</a></li>
+                <li id="projects"><a href="#projects-activities">Projects / Activities</a></li>
+                <li id="skills"><a href="#awards-recognitions">Skills</a></li>
                 <li id="contact"><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -35,11 +35,11 @@
     </div>
     
     <!-- ABOUT ME SECTION -->
-    <div class="about-me">
+    <div id="about-me">
         <div class="text">
             <h2>Christian J. Ramos Ortega</h2>
             <p>
-                Hello! I am Christian Ramos. Since I was a kid I've been a tech enthusiast,
+                Hello! I am Christian Ramos. Since I was a kid I've been a technology enthusiast,
                 enjoying the latest technology. Now I am excited to call my self a software developer, 
                 invested in developing the latest technology.
             </p>
@@ -53,36 +53,59 @@
     <div class="projects-activities center" id="projects-activities">
         <h3>Projects / Activities</h3>
         <!-- CLUE -->
-        <div id="clue-game">
-            <h6 class="tech-stack">Java, GitHub</h6>
-            <h5 class="title">Clue Boardgame</h5>
-            <img class="picture" src="">
+        <div class="project">
+            <div class="tech-stack">
+                <h6>Java, GitHub, DigitalOcean</h6>
+                <h5 class="title">Clue Boardgame</h5>
+            </div>
+            <div class="picture">
+                <img src="./Assets/CluePoster.png">
+            </div>
             <div class="description">
-                <p class="abstract">This is the abstract</p>
-                <p class="date">2021</p>
+                <div class="abstract">
+                    <p>
+                        "Implemented multithreading to recreate the Clue boardgame for the Data Communications course. 
+                        Individually designed and developed a Client-Server scheme 
+                        to establish multiplayer communication. Worked with a team of stars;
+                        Gabriel Rodriguez and Claudia Monge."
+                    </p>
+                    <p class="date">December 2021</p>
+                </div>
             </div>
         </div>
         
 
         <!-- MONOLORO -->
-        <div id="monoloro-db">
-            <h6 class="tech-stack">Oracle SQL</h6>
-            <h5 class="title">Monoloro DB</h5>
-            <img class="picture" src="">
+        <div class="project">
+            <div class="tech-stack">
+                <h6>Oracle SQL, DIA</h6>
+                <h5 class="title">Monoloro DB</h5>
+            </div>
+            <div class="picture" >
+                <img src="./Assets/monoloro.png">
+            </div>
             <div class="description">
-                <p class="abstract">This is the abstract</p>
-                <p class="date">2020</p>
+                <p class="abstract">
+                    "Based on a written narrative, designed and implemented the relation matrix, and 
+                    the Entity Relationship Diagram (ERD) on an Oracle SQL database for 
+                    the Monoloro Zoo, and executed queries to demonstrate functionality."
+                </p>
+                <p class="date">December 2020</p>
             </div>
         </div>
         
         <!-- BOTELLAS -->
-        <div id="botellas-program">
-            <h6 class="tech-stack">Java</h6>
-            <h5 class="title">Botellas</h5>
-            <img class="picture" src="">
+        <div class="project">
+            <div class="tech-stack">
+                <h6 >Java</h6>
+                <h5 class="title">Botellas</h5>
+            </div>
+            <div class="picture" >
+                <img src="">
+            </div>
             <div class="description">
                 <p class="abstract">This is the abstract</p>
-                <p class="date">2019</p>
+                <p class="date">March 2019</p>
             </div>
         </div>
     </div>

@@ -101,8 +101,8 @@ body{
     )
 }
 
-/* ABOUT ME */
-.about-me{
+/* ABOUT ME */ 
+#about-me{
     display: flex;
     padding: 5%;
     padding-left: 15%;
@@ -116,22 +116,23 @@ body{
 
 .text h2{
     text-indent: -2%;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
 }
 
 .profile-container img{
     margin-top: 5%;
     margin-left: 5%;
-    max-width: 20%;
+    padding: 5%;
+    width: 150px;
     border-radius: 50%;
 }
 
 /* PROJECTS / ACTIVITIES */
 .projects-activities{
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding-bottom: 5%;
+    justify-content: center;
 }
 
 .projects-activities h3{
@@ -139,32 +140,33 @@ body{
 }
 
 .projects-activities div{
-    min-width: 35%;
     margin: 2%;
 }
 
-.tech-stack{
+.tech-stack h6{
     text-align: left;
     position:relative;
     left: 2%;
     top: -10%;
-    width: 75%;
 }
 
-.title{
+.picture img{
+    outline: solid red;
     position: relative;
-    top: -10%;
-    font-size: 1.25rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.description{
-    float: right;
+.project{
+    background-color: white;
+    border: 1px solid gray;
+    width: 35%;
 }
 
-.abstract{
-    justify-content: center;
-
+.description p{
+    font-size: 0.75rem;
 }
+
 
 /* AWARDS / RECOGNITIONS & AECC */
 #aecc{
@@ -174,7 +176,8 @@ body{
 }
 
 #aecc img{
-    max-width: 10%;
+    width: 10%;
+    height: 10%;
 }
 
 #public-relations{
