@@ -168,7 +168,7 @@ body{
 }
 
 
-/* AWARDS / RECOGNITIONS & AECC */
+/* AECC */
 #aecc{
     display: inline-flex;
     width:100%;
@@ -188,18 +188,40 @@ body{
     width: 30%;
 }
 
+/* AWARDS / RECOGNITIONS */
 #awards-recognitions{
     margin-top: 3%;
 }
 
 #awards{
-    display: inline-block;
+    display: block;
     width: 100%;
 }
 
-#awards div{
-    margin: 8%;
+.competition img{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 85%;
 }
+
+.recognitions{
+    outline: solid gray;
+    background-color: white;
+    margin: 0 auto;
+    width: 55%;
+}
+
+.recognitions h5{
+    padding: 10px;
+}
+
+.info{
+    text-align: right;
+    padding: 5px;
+    padding-right: 10px;
+}
+
 
 /* SKILLS */
 .skills{
