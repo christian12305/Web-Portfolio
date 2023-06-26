@@ -111,8 +111,8 @@ body{
     display: flex;
     padding: 5%;
     padding-left: 15%;
-    margin-top: 25%;
-    margin-bottom: 25%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .text{
@@ -129,7 +129,15 @@ body{
     margin-left: 5%;
     padding: 5%;
     width: 150px;
-    border-radius: 50%;
+    border-radius: 100px;
+}
+
+@media only screen and (max-width: 780px) {
+    #about-me{
+        flex-grow: 3;
+        flex-wrap: wrap;
+    }
+
 }
 
 /* PROJECTS / ACTIVITIES */
@@ -185,6 +193,34 @@ body{
     padding: 2%;
 }
 
+@media only screen and (max-width: 1040px) {
+    .project{
+        width: 400px;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .projects-activities{
+        flex-flow: column;
+    }
+
+    .project{
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .picture img{
+        height: auto;
+    }
+
+    .tech-stack h6{
+        font-size: 0.75rem;
+    }
+
+}
+
 /* AWARDS / RECOGNITIONS */
 #awards-recognitions{
     margin-top: 3%;
@@ -195,7 +231,6 @@ body{
     flex-wrap: wrap;
     width: 100%;
     height: 80%;
-
 }
 
 .competition img{
@@ -233,6 +268,16 @@ body{
     text-align: right;
     padding: 20px;
     padding-right: 30px;
+}
+
+@media only screen and (max-width: 780px) {
+
+    .recognitions{
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
 }
 
 /* SKILLS */
@@ -300,6 +345,24 @@ body{
     width: 50px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .skills div{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .skills{
+        display: block;
+    }
+
+    .skills div{
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+}
+
 /* AECC */
 #aecc{
     display: inline-flex;
@@ -335,3 +398,16 @@ footer .content{
 .copyright{
     padding-right: 0.5rem;
 }
+
+@media only screen and (max-width: 780px) {
+    footer .content {
+      font-size: .625rem;
+    }
+}
+
+@media only screen and (max-width: 895px) {
+    .main-content {
+      top: 2.5625rem;
+    }
+}
+
