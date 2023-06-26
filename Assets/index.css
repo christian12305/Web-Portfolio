@@ -141,7 +141,7 @@ body{
     position: relative;
     margin-top: 10rem;
     background: linear-gradient(
-        rgba(149,179,244,1) 85%, 
+        rgba(149,179,244,1) 75%, 
         rgb(0, 60, 188) 90%,
         #E9967A 93%
     );
@@ -391,7 +391,7 @@ body{
 
     .skills div{
         margin: 0 auto;
-        width: 90%;
+        width: 80%;
         margin-bottom: 5%;
     }
 }
@@ -444,3 +444,28 @@ footer .content{
     }
 }
 
+/* CONTACT PAGE */
+
+#contact-page{
+    height: 100%;
+}
+
+#contact-page footer{
+    position: fixed;
+    bottom: 0;
+    margin-left: -4%;
+    width: 100%;
+}
+
+#contact-page body{
+    background: linear-gradient(
+        rgba(149,179,244,1) 65%, 
+        rgb(0, 60, 188) 75%,
+        #E9967A 90%
+    );
+}
+
+/* FORM */
+.form{
+    outline: solid red;
+}
