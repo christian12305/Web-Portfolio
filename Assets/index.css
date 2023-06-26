@@ -259,13 +259,17 @@ body{
 
 .skills div{
     background-color: white;
-    border: 3px solid gray;
+    border: 1px solid gray;
     border-radius: 30px;
-    width: 25%;
+    width: 35%;
 }
 
 #soft-skills ul li, #hard-skills ul li{
     font-size: 1.25rem;
+}
+
+#soft-skills, #hard-skills, #other-skills{
+    margin-top: 2%;
 }
 
 #languages, #tools{
@@ -286,9 +290,6 @@ body{
     font-size: 1.25rem;
 }
 
-.tools{
-    margin-top: 2%;
-}
 
 .tools ul li{
     display: inline-flex;
