@@ -71,13 +71,18 @@ header .logo-container{
 
 header .logo-container img{
     display: block;
-    max-width: 20%;
+    width: 20%;
 }
 
 header nav ul {
     display: flex;
     list-style-type: none;
     padding-right: 5rem;
+}
+
+.nav-bar-desktop{
+    position: fixed;
+    right: 5px;
 }
 
 nav li {
@@ -92,6 +97,42 @@ nav a {
 
 nav a:hover{
     color: white;
+}
+
+@media only screen and (min-width: 780px) {
+    .nav-bar-mobile{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 780px) {
+    .nav-bar-desktop{
+        display: none;
+    }
+
+    .nav-bar-mobile{
+        position: fixed;
+        right: 5px;
+    }
+
+    .nav-bar-mobile .icon{
+        width: 35px;
+    }
+
+    nav a:hover{
+        color: black;
+    }
+
+    nav li{
+        padding-left: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    header .logo-container img{
+        display: none;
+    }
 }
 
 
@@ -168,11 +209,7 @@ body{
 }
 
 .project{
-    background: radial-gradient(
-        white 15%,
-        rgba(149,179,244,1) 100%
-    );
-    color: white;
+    background: white;
     border: 1px solid rgba(149,179,244,1);
     border-radius: 30px;
     width: 40%;
@@ -180,7 +217,6 @@ body{
 }
 
 #project-inner{
-    background-color: white;
     border-radius: 30px;
     color: black;
     width: 95%;
@@ -195,19 +231,19 @@ body{
 
 @media only screen and (max-width: 1040px) {
     .project{
-        width: 400px;
+        width: 60%;
         margin-bottom: 5%;
     }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 600px) {
     .projects-activities{
         flex-flow: column;
     }
 
     .project{
         margin: 0 auto;
-        width: 90%;
+        width: 80%;
         margin-bottom: 5%;
     }
 
@@ -216,7 +252,7 @@ body{
     }
 
     .tech-stack h6{
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
 }
@@ -241,10 +277,7 @@ body{
 }
 
 .recognitions{
-    background: radial-gradient(
-        white 70%,
-        rgba(149,179,244,1) 100%
-    );
+    background: white;
     border-radius: 30px;
     margin: 0 auto;
     width: 55%;
