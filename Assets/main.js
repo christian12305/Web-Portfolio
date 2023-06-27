@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function(event){
     let Yscroll = this.scrollY;
-    let temp = Yscroll-1;
+    let temp = Yscroll-0.000001;
 
     while(temp != Yscroll){
 
@@ -31,7 +31,7 @@ window.addEventListener("scroll", function(event){
         }
         console.log(X, Y);
 
-        elem.style.backgroundImage = `radial-gradient(at ${X}% ${Y}%, hsl(52, 100%, 67%) -10%, rgba(149,179,244,1) 65%)`;
+        elem.style.backgroundImage = `radial-gradient(circle at ${X}% ${Y}%, hsl(52, 100%, 67%) -10%, rgba(149,179,244,1) 65%)`;
         
     }
 

@@ -54,7 +54,7 @@ header {
     /* EL SOL */
     /* Starting position at the east (right) */
     background-image: radial-gradient(
-        circle at right, 
+        circle at 90% 30%, 
         hsl(52, 100%, 67%) -10%, 
         rgba(149,179,244,1) 65%);
 }
