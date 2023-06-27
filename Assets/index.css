@@ -239,10 +239,16 @@ body{
     padding: 2%;
 }
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1000px) {
     .project{
         width: 60%;
         margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .project{
+        width: 75%;
     }
 }
 
@@ -311,6 +317,13 @@ body{
     text-align: right;
     padding: 20px;
     padding-right: 30px;
+}
+
+#awards .tech-stack h6{
+    outline:solid red;
+    left: 2%;
+    padding-top: 0;
+    margin-left: -5%;
 }
 
 @media only screen and (max-width: 780px) {
