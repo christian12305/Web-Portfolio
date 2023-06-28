@@ -99,6 +99,10 @@ nav a:hover{
     color: white;
 }
 
+.nav-bar-desktop li a.active{
+    color: white;
+}
+
 @media only screen and (min-width: 780px) {
     .nav-bar-mobile{
         display: none;
@@ -134,7 +138,7 @@ nav a:hover{
 }
 
 @media only screen and (max-width: 350px) {
-    header .logo-container img{
+    #index header .logo-container img{
         display: none;
     }
 }
@@ -488,6 +492,11 @@ footer .content{
     width: 100%;
 }
 
+@media only screen and (max-width: 300px) {
+    #contact-page header .logo-container img{
+        display: none;
+    }
+}
 #contact-page body{
     background: linear-gradient(
         rgba(149,179,244,1) 65%, 

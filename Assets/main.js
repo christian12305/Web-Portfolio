@@ -29,10 +29,31 @@ window.addEventListener("scroll", function(event){
         }else{
             Y = Math.abs(X - 30);
         }
-        console.log(X, Y);
 
         elem.style.backgroundImage = `radial-gradient(circle at ${X}% ${Y}%, hsl(52, 100%, 67%) -10%, rgba(149,179,244,1) 65%)`;
         
     }
 
 });
+
+//Highlights on navbar each section onscroll
+let sections = document.querySelectorAll('.section');
+let secNav = document.querySelectorAll('.nav-bar-desktop ul li a');
+
+window.onscroll = () => {
+    sections.forEach((sec) => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+
+            secNav.forEach((sec) => {
+                sec.classList.remove('active');
+                document.querySelector('.nav-bar-desktop ul li a[href*=' + id + ']').classList.add('active');
+            });
+        }
+    });
+};
+

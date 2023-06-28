@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="index">
 <meta charset="UTF-8">
 <head>
     <title>My Web Portfolio</title>
     <link rel="stylesheet" href="./Assets/index.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="./Assets/main.js"></script>
+    <script src="./Assets/main.js" defer></script>
 </head>
 
 <!-- HEADER -->
@@ -20,7 +20,7 @@
         <!-- NAV BAR -->
         <nav class="nav-bar-desktop">
             <ul>
-                <li id="about"><a href="#">About</a></li>
+                <li class="active" id="about"><a href="#about-me">About</a></li>
                 <li id="projects"><a href="#projects-activities">Projects / Activities</a></li>
                 <li id="skills"><a href="#skill-section">Skills</a></li>
                 <li id="contact"><a href="./contact.html">Contact</a></li>
@@ -48,7 +48,7 @@
     -->
     
     <!-- ABOUT ME SECTION -->
-    <div id="about-me">
+    <section class="section" id="about-me">
         <div class="text">
             <h2>Christian J. Ramos Ortega</h2>
             <p>
@@ -60,10 +60,10 @@
         <div class="profile-container">
             <img src="./Assets/CHRO.JPG">
         </div>
-    </div>
+    </section>
 
     <!-- PROJECTS / ACTIVITIES SECTION -->
-    <div class="projects-activities center" id="projects-activities">
+    <section class="projects-activities center section" id="projects-activities">
         <h3>Projects</h3>
         <!-- CLUE -->
         <div class="project">
@@ -132,10 +132,10 @@
             </div>
             
         </div>
-    </div>
+    </section>
 
     <!-- AWARDS / RECOGNITIONS -->
-    <div id="awards-recognitions" class="center">
+    <section id="awards-recognitions" class="center section">
         <h3>Awards / Recognitions</h3>
         <div id="awards" class="center">
             <div class="recognitions">
@@ -167,10 +167,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
      <!-- AECC -->
-     <div class="center">
+     <section id="aecc-section" class="center section">
         <h4>Asociación Estudiantil de Ciencias de Computadoras</h4>
         <div id="aecc" >
             <img src="./Assets/Logo-AECC.png">
@@ -183,11 +183,11 @@
                 <p class="date">April 2023</p>
             </div>
         </div>
-    </div>
+    </section>
     
 
     <!-- SKILLS SECTION -->
-    <div id="skill-section" class="center">
+    <section id="skill-section" class="center section">
         <div id="inner-skill">
             <h3>Skills</h3>
             <div class="skills">
@@ -238,8 +238,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </body>
+
 <footer>
     <div class="content">
         <p class="copyright">Made by Christian J. Ramos Ortega</p>
