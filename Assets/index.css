@@ -507,5 +507,36 @@ footer .content{
 
 /* FORM */
 .form{
-    outline: solid red;
+    display: block;
+    text-align: center;
+}
+
+.form ul{
+    list-style: none;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.form ul li{
+    font-weight: bold;
+    width: fit-content;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.form ul li input , .form ul li textarea{
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+#to{
+    font-size: 2rem;
+}
+
+#submit{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
