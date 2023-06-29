@@ -104,11 +104,16 @@ nav a:hover{
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 925px) {
+    .nav-bar-desktop #about{
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 780px) {
     .nav-bar-mobile{
         display: none;
     }
-
 }
 
 @media only screen and (max-width: 780px) {
@@ -138,12 +143,21 @@ nav a:hover{
     }
 }
 
-@media only screen and (max-width: 350px) {
-    #index header .logo-container img{
+@media only screen and (max-width: 420px) {
+    .nav-bar-mobile #about{
         display: none;
     }
 }
 
+@media only screen and (max-width: 350px) {
+    #index header .logo-container img{
+        display: none;
+    }
+
+    .nav-bar-mobile #about{
+        display: flex;
+    }
+}
 
 /* BODY */
 body{
@@ -163,6 +177,7 @@ body{
     padding-left: 10%;
     margin-top: 15%;
     margin-bottom: 15%;
+    flex-wrap: wrap;
 }
 
 .text{
@@ -181,6 +196,16 @@ body{
     padding: 5%;
     width: 150px;
     border-radius: 100px;
+}
+
+#about-me #socials{
+    width: 100%;
+}
+
+#about-me #socials ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 780px) {
@@ -555,5 +580,9 @@ footer .content{
 
 #socials ul li{
     margin-right: 30px;
+
+}
+
+@media only screen and (min-width: 780px) {
 
 }
