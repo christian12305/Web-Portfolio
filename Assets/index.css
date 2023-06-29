@@ -540,3 +540,14 @@ footer .content{
     margin-top: 20px;
     padding-bottom: 20px;
 }
+
+#socials ul{
+    display: inline-flex;
+    flex-direction: row;
+    box-shadow: none;
+}
+
+#socials ul li{
+    margin-right: 30px;
+
+}
