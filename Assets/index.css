@@ -165,7 +165,9 @@ body{
 }
 
 .text{
+    width: 50%;
     text-indent: 5%;
+    margin: 0 auto;
 }
 
 .text h2{
@@ -175,7 +177,6 @@ body{
 
 .profile-container img{
     margin-top: 5%;
-    margin-left: 2%;
     padding: 5%;
     width: 150px;
     border-radius: 100px;
@@ -191,6 +192,10 @@ body{
 
     .profile-container{
         margin: 0 auto;
+    }
+
+    .text{
+        width: 100%;
     }
 
 }
